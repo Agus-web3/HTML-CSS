@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<div class="container my-4">
+    <div class="bg-light p-5 rounded ">
+        <h1 class="display-5 fw-bold">Este es un Jumbotron</h1>
+        <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro excepturi laboriosam rem qui. Quo debitis distinctio, aliquam expedita facere quaerat dolor, a ipsum, exercitationem nobis quod voluptate enim amet illo.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPrueba">Abre el modal</button>
+        <div class="modal fade" id="modalPrueba" tabindex="-1" aria-labelledby="modalPrueba" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPruebaLabel">Grande OpenBootcamp</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fs-4">Vamos probando Bootstrap de a poco :)</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerralo</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4 bg-light p-2 text-center" >
+    <form action="">
+        <div class="row mb-3 justify-content-center">
+            <label for="nombre" class="form-label fw-bold">Nombre</label>
+            <input type="text" id="nombre" class="form-control w-25" placeholder="Tu primer nombre :)">
+        </div>
+        <div class=" row mb-3 justify-content-center">
+            <label for="telefono" class="form-label fw-bold">Tu celular</label>
+            <input type="number" class="form-control w-25" id="telefono" placeholder="El que realmente usas">
+        </div>
+        <div class=" row mb-3 justify-content-center">
+        <label for="mensaje" class="form-label fw-bold">Dejá tu mensaje</label>
+        <textarea name="tmensaje" id="mensaje" class="form-control w-25"></textarea>
+        </div>
+    </form>
+</div>
+<div class="container  my-4 bg-light">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <div class="card-title">Agustin Sidler</div>
+            <p class="card-text">Soy un blockdev en desarrollo arrancando por las bases del front end para meterme en todo lo que tiene que ver con blockhain y smartcontrats :)</p>
+            <div class="card-footer">agussidler@protonmail.com</div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
